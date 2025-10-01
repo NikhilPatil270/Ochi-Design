@@ -7,7 +7,7 @@ const Landing = () => {
         {["We Create", "eye opening", "presentations"].map((item, index) => {
           return <div className="masker">
                 <div key={index} className='w-fit flex items-center font-["FoundersGrotesk-Semibold"]'>
-
+                  {index===1 && (<div className="w-[9vw] h-[6vw] mr-1 rounded-md bg-red-500 relative top-[0.5vw] "></div>)}
                 <h1 className='text-[7.5vw]  md:text-9xl
                 leading-[3rem]
                 sm:text-6xl sm:leading-[3rem] xl:leading-[7vw] lg:leading-[6rem] tracking-tight uppercase '>{item}</h1>
