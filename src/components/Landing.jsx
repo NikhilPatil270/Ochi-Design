@@ -1,5 +1,7 @@
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
+import logo from "../assets/img2.jpg"
+
 const Landing = () => {
   return (
     <div className="w-full h-screen bg-zinc-900 pt-1">
@@ -7,16 +9,15 @@ const Landing = () => {
         {["We Create", "eye opening", "presentations"].map((item, index) => {
           return <div className="masker">
                 <div key={index} className='w-fit flex items-center font-["FoundersGrotesk-Semibold"]'>
-                  {index===1 && (<div className="w-[9vw] h-[6vw] mr-1 rounded-md bg-red-500 relative top-[0.5vw] "></div>)}
-                <h1 className='text-[7.5vw]  md:text-9xl
-                leading-[3rem]
-                sm:text-6xl sm:leading-[3rem] xl:leading-[7vw] lg:leading-[6rem] tracking-tight uppercase '>{item}</h1>
+                  {index===1 && (<img className="w-[9vw] h-[6vw] mr-[1vw] rounded-md bg-red-500 relative top-[1.8vw] " src={logo} alt="logo" />)}
+                  
+                <h1 className='pt-[2vw] -mb-[1vw] text-[9vw] leading-[.65]  uppercase '>{item}</h1>
             </div>
           </div>;
         })}
       </div>
       <div
-        className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center px-6 md:px-20 py-2
+        className="border-t-[1px] border-zinc-800 mt-20 flex justify-between items-center px-6 md:px-20 py-2
         "
       >
         {[
